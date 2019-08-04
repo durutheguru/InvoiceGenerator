@@ -42,7 +42,7 @@ public class GenerateInvoiceCommand implements Command<TimetableUploadResult> {
     public TimetableUploadResult execute() throws ServiceException {
         try {
             List<EmployeeBill> employeeBills = fileExtractor.extract(multipartFile, new EmployeeBillCSVExtractionFunction());
-            
+
             employeeBills.stream()
                     .collect(Collectors.groupingBy(EmployeeBill::getProject))
                     .forEach((project, bills) -> generatedInvoices.add(invoiceGenerator.generateInvoice(project, bills)));

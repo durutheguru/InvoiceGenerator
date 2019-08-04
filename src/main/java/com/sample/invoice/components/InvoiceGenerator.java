@@ -22,7 +22,7 @@ import java.util.List;
 @Component
 public class InvoiceGenerator {
 
-    public final String DEFAULT_MIME_TYPE = "data:application/pdf;base64,";
+    public final static String DEFAULT_MIME_TYPE = "data:application/pdf;base64,";
 
     private Logger logger = LoggerFactory.getLogger(InvoiceGenerator.class);
 

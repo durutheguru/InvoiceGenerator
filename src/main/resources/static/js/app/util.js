@@ -62,10 +62,6 @@
 
         registerComponents : function(request) {
             _$$.util.merge(request, _$$.components);
-        },
-
-        registerConstants : function(request) {
-            _$$.util.merge(request, _$$.constants);
         }
 
     }
