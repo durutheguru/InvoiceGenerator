@@ -45,7 +45,13 @@ public class GenerateInvoiceCommand implements Command<TimetableUploadResult> {
 
             employeeBills.stream()
                     .collect(Collectors.groupingBy(EmployeeBill::getProject))
-                    .forEach((project, bills) -> generatedInvoices.add(invoiceGenerator.generateInvoice(project, bills)));
+                    .forEach((project, bills) -> {
+                        GeneratedInvoice invoice = invoiceGenerator.generateInvoice(project, bills);
+
+                        if (invoice != null) {
+                            generatedInvoices.add(invoice);
+                        }
+                    });
 
             return new TimetableUploadResult(generatedInvoices);
         }
