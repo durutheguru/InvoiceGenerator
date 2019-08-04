@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class BillableHoursApplication {
+public class InvoiceGenerationApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(BillableHoursApplication.class, args);
+		SpringApplication.run(InvoiceGenerationApplication.class, args);
 	}
 
 }

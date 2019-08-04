@@ -11,10 +11,10 @@
 	</parent>
 
 	<groupId>com.sample</groupId>
-	<artifactId>billablehours</artifactId>
+	<artifactId>invoice-generator</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>billable_hours</name>
-	<description>Demo project for Billable Hours</description>
+	<description>Demo project for Invoice Generator</description>
 
 	<properties>
 		<java.version>1.8</java.version>
