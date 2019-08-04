@@ -1,4 +1,4 @@
-package com.sample.billablehours;
+package com.sample.invoice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

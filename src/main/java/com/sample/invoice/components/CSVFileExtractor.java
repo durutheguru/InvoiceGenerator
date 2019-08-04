@@ -1,4 +1,4 @@
-package com.sample.billablehours.components;
+package com.sample.invoice.components;
 
 
 import com.opencsv.CSVReader;

@@ -1,4 +1,4 @@
-package com.sample.billablehours.apimodel;
+package com.sample.invoice.apimodel;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnore;

@@ -1,4 +1,4 @@
-package com.sample.billablehours.controller.web;
+package com.sample.invoice.controller.web;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

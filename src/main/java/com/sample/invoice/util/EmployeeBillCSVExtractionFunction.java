@@ -1,7 +1,7 @@
-package com.sample.billablehours.util;
+package com.sample.invoice.util;
 
 
-import com.sample.billablehours.apimodel.EmployeeBill;
+import com.sample.invoice.apimodel.EmployeeBill;
 import org.apache.commons.lang3.StringUtils;
 
 import java.time.LocalDate;

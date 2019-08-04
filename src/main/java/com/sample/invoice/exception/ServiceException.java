@@ -1,4 +1,4 @@
-package com.sample.billablehours.exception;
+package com.sample.invoice.exception;
 
 
 /**

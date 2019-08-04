@@ -1,13 +1,13 @@
-package com.sample.billablehours.service.command;
+package com.sample.invoice.service.command;
 
 
-import com.sample.billablehours.apimodel.EmployeeBill;
-import com.sample.billablehours.apimodel.GeneratedInvoice;
-import com.sample.billablehours.apimodel.TimetableUploadResult;
-import com.sample.billablehours.components.CSVFileExtractor;
-import com.sample.billablehours.components.InvoiceGenerator;
-import com.sample.billablehours.exception.ServiceException;
-import com.sample.billablehours.util.EmployeeBillCSVExtractionFunction;
+import com.sample.invoice.apimodel.EmployeeBill;
+import com.sample.invoice.apimodel.GeneratedInvoice;
+import com.sample.invoice.apimodel.TimetableUploadResult;
+import com.sample.invoice.components.CSVFileExtractor;
+import com.sample.invoice.components.InvoiceGenerator;
+import com.sample.invoice.exception.ServiceException;
+import com.sample.invoice.util.EmployeeBillCSVExtractionFunction;
 import org.springframework.web.multipart.MultipartFile;
 
 import java.io.IOException;

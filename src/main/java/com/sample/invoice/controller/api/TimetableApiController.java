@@ -1,9 +1,9 @@
-package com.sample.billablehours.controller.api;
+package com.sample.invoice.controller.api;
 
 
-import com.sample.billablehours.apimodel.TimetableUploadResult;
-import com.sample.billablehours.exception.ServiceException;
-import com.sample.billablehours.service.TimetableService;
+import com.sample.invoice.apimodel.TimetableUploadResult;
+import com.sample.invoice.exception.ServiceException;
+import com.sample.invoice.service.TimetableService;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;

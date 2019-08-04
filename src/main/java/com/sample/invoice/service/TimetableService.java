@@ -1,11 +1,11 @@
-package com.sample.billablehours.service;
+package com.sample.invoice.service;
 
 
-import com.sample.billablehours.apimodel.TimetableUploadResult;
-import com.sample.billablehours.components.CSVFileExtractor;
-import com.sample.billablehours.components.InvoiceGenerator;
-import com.sample.billablehours.exception.ServiceException;
-import com.sample.billablehours.service.command.GenerateInvoiceCommand;
+import com.sample.invoice.apimodel.TimetableUploadResult;
+import com.sample.invoice.components.CSVFileExtractor;
+import com.sample.invoice.components.InvoiceGenerator;
+import com.sample.invoice.exception.ServiceException;
+import com.sample.invoice.service.command.GenerateInvoiceCommand;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 

@@ -13,7 +13,7 @@
 	<groupId>com.sample</groupId>
 	<artifactId>invoice-generator</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>billable_hours</name>
+	<name>invoice-generator</name>
 	<description>Demo project for Invoice Generator</description>
 
 	<properties>

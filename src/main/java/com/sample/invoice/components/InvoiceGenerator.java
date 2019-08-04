@@ -1,12 +1,12 @@
-package com.sample.billablehours.components;
+package com.sample.invoice.components;
 
 
 import com.itextpdf.text.*;
 import com.itextpdf.text.pdf.PdfPCell;
 import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
-import com.sample.billablehours.apimodel.EmployeeBill;
-import com.sample.billablehours.apimodel.GeneratedInvoice;
+import com.sample.invoice.apimodel.EmployeeBill;
+import com.sample.invoice.apimodel.GeneratedInvoice;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
