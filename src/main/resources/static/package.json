@@ -1,0 +1,33 @@
+{
+  "name": "sterling_health_concept",
+  "version": "0.0.1",
+  "description": "Web Application to allow Sterling keep data on Partners and link Partners with potential clients.",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/durutheguru/sterling-health-concept.git"
+  },
+  "keywords": [
+    "sterling",
+    "health"
+  ],
+  "author": "Julian Duru",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/durutheguru/sterling-health-concept/issues"
+  },
+  "homepage": "https://github.com/durutheguru/sterling-health-concept#readme",
+  "devDependencies": {
+    "natives": "^1.1.6",
+    "gulp": "latest",
+    "gulp-coffee": "latest",
+    "gulp-concat": "latest",
+    "gulp-connect": "latest",
+    "gulp-minify": "^3.1.0",
+    "gulp-sass": "latest",
+    "gulp-uglify": "latest",
+    "gulp-util": "latest"
+  }
+}

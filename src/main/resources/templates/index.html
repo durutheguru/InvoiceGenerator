@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Julian Duru">
+    <meta http-equiv="Cache-control" content="no-cache"/>
+    <meta http-equiv="expires" content="timestamp"/>
+    <title>Invoice Generator</title>
+
+    <link href="css/main.css" rel="stylesheet"/>
+
+</head>
+
+<body>
+<section id="container">
+
+    <header class="header white-bg">
+        <a href="/" class="logo header-main">INVOICE <span>GENERATOR</span></a>
+    </header>
+
+    <section id="main-invoices-upload-content">
+
+        <div id="timetable-upload-container" class="row" style="margin-left:5px;margin-right:5px;">
+            <div class="col-md-8">
+                <div class="alert alert-success alert-block fade in shadowed">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <h5 style="position:relative;left:-5px;">
+                                <i class="fa fa-ok-sign"></i>
+                                Upload Timetable
+                            </h5>
+
+                        <span class="btn btn-white">
+                            <input type="file" id="file" ref="file" v-on:change="selectFile()"/>
+                        </span>
+
+                            <button class="btn btn-primary" v-on:click="doUpload()" :disabled="disabled()">
+                                Upload <i class="fa fa-cloud-upload"></i>
+                            </button>
+
+                            <button class="btn btn-danger" v-on:click="clear()">
+                                Clear <i class="fa fa-times"></i>
+                            </button>
+
+                        </div>
+
+                        <div class="left-bordered-green col-md-5" style="height:69px;vertical-align:middle">
+                            <div v-if="fileUploading">
+                                <h5 style="position:relative;left:-5px;">
+                                    <i class="fa fa-ok-sign"></i>
+                                    Upload In Progress. Please wait...
+                                </h5>
+                                <br/>
+
+                                <div class="progress progress-striped active progress-sm">
+
+                                    <div class="progress-bar progress-bar-success"
+                                         role="progressbar" aria-valuenow="100"
+                                         aria-valuemin="0" aria-valuemax="100"
+                                         style="width: 100%">
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div v-if="uploadError.length">
+                                <h5 class="red" v-text="uploadError"></h5>
+                            </div>
+                            <div v-if="uploadSuccess">
+                                <h5 class="info-msg">Upload completed successfully. </h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="invoice-list-container" class="row h-padding-15">
+
+            <div>
+                <div class="directory-info-row" v-if="invoiceListAvailable()">
+                    <div class="col-md-4 col-sm-6" v-for="invoice in invoices">
+
+                        <a :download="invoice.companyName + '_Invoice.pdf'" :href="invoice.invoiceDataEncoded"
+                           class="bigger-text-1-5 panel-main-title" v-text="invoice.companyName + '_Invoice.pdf'"
+                           target="_blank"></a>
+                        <hr/>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="text-center">
+
+        </div>
+    </footer>
+
+</section>
+
+<script src="js/app/timetable/app.min.js"></script>
+
+</body>
+</html>

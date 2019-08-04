@@ -1,0 +1,53 @@
+@import "bootstrap.min.css";
+@import "font-awesome.css";
+@import "googlefont.css";
+
+header {
+    font-size: 2em;
+    margin-top: 10px;
+}
+
+a.header-main {
+    margin : 10px 20px;
+}
+
+.bigger-text-1-5 {
+    font-size : 1.5em;
+}
+
+.h-padding-15 {
+    padding-left : 15px;
+    padding-right : 15px;
+}
+
+.info-msg, .panel-main-title {
+    color : #4CA2ED;
+}
+
+#main-invoices-upload-content {
+    margin-top: 5%;
+}
+
+#timetable-upload-container {
+    margin-bottom: 20px;
+}
+
+.left-bordered-green {
+    border-left : 1px solid #9DA;
+}
+
+.red {
+    color : #EF6F66;
+}
+
+.grey {
+    color : #AAA;
+}
+
+.shadowed {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.shadowed-s {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.19);
+}
